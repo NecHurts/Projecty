@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">YourName</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container hero__content">
+      <span class="hero__eyebrow">Available for work</span>
+      <h1 class="hero__title">
+        I build things<br />for the <span>web</span>.
+      </h1>
+      <p class="hero__subtitle">
+        I'm a developer who loves creating clean, fast, and accessible digital experiences.
+        Focused on turning ideas into polished products.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">See my work</a>
+        <a href="#contact" class="btn btn--outline">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">About me</span>
+        <h2 class="section__title">A little background</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I'm a full-stack developer based on the internet, passionate about building
+            software that feels effortless to use. I enjoy the intersection of design and
+            engineering — writing code that's as thoughtful as it is functional.
+          </p>
+          <p>
+            When I'm not coding, I'm probably reading, hiking, or exploring a new coffee
+            shop. I believe great products come from curiosity and care.
+          </p>
+          <p>
+            Currently looking for new opportunities. If you have an interesting project,
+            <a href="#contact" style="color: var(--color-accent-light);">let's talk</a>.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="about__skills">
+            <span class="skill-chip">HTML / CSS</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">React</span>
+            <span class="skill-chip">Node.js</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">Figma</span>
+            <span class="skill-chip">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Projects</span>
+        <h2 class="section__title">Things I've built</h2>
+      </div>
+      <div class="projects__grid">
+
+        <article class="card reveal">
+          <div class="card__icon">🛒</div>
+          <h3 class="card__title">ShopLite</h3>
+          <p class="card__desc">
+            A lightweight e-commerce storefront with cart, search, and checkout. Built for speed
+            and accessibility.
+          </p>
+          <div class="card__tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Stripe</span>
+          </div>
+          <a href="#" class="card__link">View project →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">📊</div>
+          <h3 class="card__title">DataBoard</h3>
+          <p class="card__desc">
+            A real-time analytics dashboard that visualises data from multiple sources in a single
+            clean interface.
+          </p>
+          <div class="card__tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">D3.js</span>
+            <span class="tag">WebSockets</span>
+          </div>
+          <a href="#" class="card__link">View project →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">🤖</div>
+          <h3 class="card__title">ChatKit</h3>
+          <p class="card__desc">
+            An open-source chat widget you can drop into any site. Supports themes, attachments,
+            and AI-powered replies.
+          </p>
+          <div class="card__tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">WebRTC</span>
+            <span class="tag">Claude API</span>
+          </div>
+          <a href="#" class="card__link">View project →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Contact</span>
+        <h2 class="section__title">Let's work together</h2>
+      </div>
+      <div class="contact__inner">
+        <div class="contact__info reveal">
+          <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities
+            to be part of your vision.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:hello@example.com" class="contact__link">
+              <span class="contact__link-icon">✉️</span>
+              hello@example.com
+            </a>
+            <a href="https://github.com" class="contact__link" target="_blank" rel="noopener">
+              <span class="contact__link-icon">🐙</span>
+              github.com/yourhandle
+            </a>
+            <a href="https://linkedin.com" class="contact__link" target="_blank" rel="noopener">
+              <span class="contact__link-icon">💼</span>
+              linkedin.com/in/yourname
+            </a>
+          </div>
+        </div>
+        <form id="contact-form" class="reveal" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 YourName. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
